@@ -1,0 +1,143 @@
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+:root {
+  --clr-metalic-seaweed: #177e89ff;
+  --clr-eagle-green: #084c61ff;
+  --clr-granium-lake: #db3a34ff;
+  --clr-yellow-red: #ffc857ff;
+  --clr-jet: #323031ff;
+  --clr-white: #fffafa;
+  --clr-black: #000000;
+  --clr-box-shadow: 0px 22px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+main {
+  width: 70%;
+  margin: auto;
+  padding: 10px 15px;
+  min-width: 350px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid;
+  box-shadow: var(--clr-box-shadow);
+}
+h1 {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.date-container {
+  width: 100%;
+  /* background-color: violet; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 10px;
+}
+input {
+  width: 60%;
+  height: 7vh;
+
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+button {
+  width: 40%;
+  height: 7vh;
+  font-size: 1rem;
+
+  font-weight: 900;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #9e74eb;
+  cursor: pointer;
+  color: #fffafa;
+}
+.btn-calculate:hover {
+  border: 5px solid#9face6 100%;
+  transition: 0.3s all;
+  background-color: #000;
+}
+.display-container {
+  width: 100%;
+  padding: 10px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 10px;
+}
+.years,
+.months,
+.days {
+  width: calc(100% / 3);
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* background-color: brown; */
+  height: 12vh;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+span {
+  font-size: 2rem;
+  font-weight: 900;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.social-icon {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.fa-brands {
+  font-size: 1.75rem;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    width: 450px;
+  }
+}

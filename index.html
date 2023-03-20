@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator</title>
+
+    <!-- fontAwesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>age calculator</h1>
+      <div class="date-container">
+        <input type="date" class="input-date" id="date" />
+        <button class="btn-calculate" id="calculate" onclick="calculateAge()">
+          calculate
+        </button>
+      </div>
+      <div class="display-container">
+        <div class="years">
+          <span id="year">21</span>
+          <p>year</p>
+        </div>
+        <div class="months">
+          <span id="months">05</span>
+          <p>month</p>
+        </div>
+        <div class="days">
+          <span id="days">12</span>
+          <p>days</p>
+        </div>
+      </div>
+    </main>
+    <!-- social icons -->
+
+    <div class="social-icon">
+      <a href="https://instagram.com/mohan__tox?igshid=ZmZhODViOGI="
+        ><i class="fa-brands fa-instagram icons"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/mohanbharathi-g-048664222"
+        ><i class="fa-brands fa-linkedin icons"></i
+      ></a>
+      <a href="https://github.com/Mohanbharathi-g"
+        ><i class="fa-brands fa-github icons"></i
+      ></a>
+    </div>
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
